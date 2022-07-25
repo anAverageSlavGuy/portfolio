@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Iceberg from './iceberg.svg';
 import Photo from './photo.jpg';
@@ -51,6 +51,9 @@ function Home() {
         },
         skillsCategory: {
             borderColor: toggle ? "#fff" : "#1d1d1d"
+        },
+        mouse: {
+            opacity: scroll ? "0" : "1"
         }
     };
 
@@ -66,6 +69,12 @@ function Home() {
         setToggle(!toggle);
         setAnimate(true);
       } */
+
+    useEffect(() => {
+        setTimeout(function () {
+            setAnimate(true);
+        }, 3000);
+    }, []);
 
 
     const handleTransitionEnd = () => {
@@ -121,76 +130,62 @@ function Home() {
             <div className="switch-track" style={styles.track}></div>
           </div> */}
 
-                    <div className="page-indicator">
-                        {/* <div className={toggle ? "circle" : "circle-fill"} style={toggle ? styles.circle : styles.circleFill}></div>
-            <div className="line" style={styles.line}></div>
-            <div className={toggle ? "circle-fill" : "circle"} style={toggle ? styles.circleFill : styles.circle}></div> */}
-                        {/* <div className="scroll-me">
-              <div className="wheel"></div>
-            </div> */}
-                    </div>
+                    {animate === true &&
+                        <div className="scroll-me" style={styles.mouse}>
+                            <div className="wheel"></div>
+                        </div>
+                    }
 
                     <div className="background" style={styles.background}></div>
                     <img src={Iceberg} className={"iceberg-" + (toggle ? "top" : "bottom")} onTransitionEnd={() => handleTransitionEnd()} />
                     <div className="content-body">
 
-
                         {toggle ? (
                             <>
-                                <div className="top-half">
-                                    <div className="title" style={styles.title}>
-                                        BACK-END
-                                    </div>
-                                    <div className="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae metus pulvinar felis eleifend dignissim nec sit amet orci. Duis sed ipsum vestibulum, vestibulum arcu id, cursus nulla. Nam ligula turpis, fringilla vel sodales sit amet, finibus et neque
-                                    </div>
-                                    <div className="divider" style={styles.divider}></div>
+                                <div className="title" style={styles.title}>
+                                    BACK-END
                                 </div>
-                                <div className="bottom-half">
-                                    <div className="skills-title" style={styles.title}>SKILLS</div>
-                                    <div className="skills">
-                                        {
-                                            backEndSkills.map(category => {
-                                                console.log(category);
-                                                return (
-                                                    <div className="skills-category" style={styles.skillsCategory}>
-                                                        <div className="skills-header" style={styles.skillsHeader}>{category.name}</div>
-                                                        <div className="skills-body">
-                                                            {category.items.map(skill => <div key={skill} className="skill">{skill}</div>)}
-                                                        </div>
-                                                    </div>)
-                                            })
-                                        }
-                                    </div>
+                                <div className="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae metus pulvinar felis eleifend dignissim nec sit amet orci. Duis sed ipsum vestibulum, vestibulum arcu id, cursus nulla. Nam ligula turpis, fringilla vel sodales sit amet, finibus et neque
+                                </div>
+                                <div className="divider" style={styles.divider}></div>
+                                <div className="skills-title" style={styles.title}>SKILLS</div>
+                                <div className="skills">
+                                    {
+                                        backEndSkills.map(category => {
+                                            return (
+                                                <div key={category.name} className="skills-category" style={styles.skillsCategory}>
+                                                    <div className="skills-header" style={styles.skillsHeader}>{category.name}</div>
+                                                    <div className="skills-body">
+                                                        {category.items.map(skill => <div key={skill} className="skill">{skill}</div>)}
+                                                    </div>
+                                                </div>)
+                                        })
+                                    }
                                 </div>
                             </>
                         ) : (
                             <>
-                                <div className="top-half">
-                                    <div className="title" style={styles.title}>
-                                        FRONT-END
-                                    </div>
-                                    <div className="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae metus pulvinar felis eleifend dignissim nec sit amet orci. Duis sed ipsum vestibulum, vestibulum arcu id, cursus nulla. Nam ligula turpis, fringilla vel sodales sit amet, finibus et neque
-                                    </div>
-                                    <div className="divider" style={styles.divider}></div>
+                                <div className="title" style={styles.title}>
+                                    FRONT-END
                                 </div>
-                                <div className="bottom-half">
-                                    <div className="skills-title" style={styles.title}>SKILLS</div>
-                                    <div className="skills">
-                                        {
-                                            frontEndSkills.map(category => {
-                                                console.log(category);
-                                                return (
-                                                    <div className="skills-category" style={styles.skillsCategory}>
-                                                        <div className="skills-header" style={styles.skillsHeader}>{category.name}</div>
-                                                        <div className="skills-body">
-                                                            {category.items.map(skill => <div key={skill} className="skill">{skill}</div>)}
-                                                        </div>
-                                                    </div>)
-                                            })
-                                        }
-                                    </div>
+                                <div className="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae metus pulvinar felis eleifend dignissim nec sit amet orci. Duis sed ipsum vestibulum, vestibulum arcu id, cursus nulla. Nam ligula turpis, fringilla vel sodales sit amet, finibus et neque
+                                </div>
+                                <div className="divider" style={styles.divider}></div>
+                                <div className="skills-title" style={styles.title}>SKILLS</div>
+                                <div className="skills">
+                                    {
+                                        frontEndSkills.map(category => {
+                                            return (
+                                                <div key={category.name} className="skills-category" style={styles.skillsCategory}>
+                                                    <div className="skills-header" style={styles.skillsHeader}>{category.name}</div>
+                                                    <div className="skills-body">
+                                                        {category.items.map(skill => <div key={skill} className="skill">{skill}</div>)}
+                                                    </div>
+                                                </div>)
+                                        })
+                                    }
                                 </div>
                             </>
                         )
