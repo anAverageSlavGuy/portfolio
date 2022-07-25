@@ -1,38 +1,356 @@
-.App {
+:root {
+  --font-12: 0.85vw;
+  --font-14: 1vw;
+  --font-18: 1.25vw;
+  --font-20: 1.4vw;
+  --font-40: 2.75vw;
+  --font-80: 5.5vw;
+}
+
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.app {
+  height: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about {
+  flex: 1;
+  background: #cbcbcb;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 3;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out;
+}
+
+.background {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  transition-duration: 0.3s;
+  transition-property: height;
+  transition-timing-function: ease-in-out;
+  background: #1d1d1d;
+}
+
+.switch {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 60px;
+  height: 110px;
+  width: 50px;
+  background: transparent;
+  border: 2px solid;
+  border-color: #1d1d1d;
+  border-radius: 40px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.switch-track {
+  position: absolute;
+  width: 37px;
+  background: #fff;
+  height: 37px;
+  border-radius: 50%;
+  top: 6px;
+  transition-delay: 1s;
+  transition: all 0.3s ease-in-out;
+}
+
+.iceberg-bottom {
+  height: 150%;
+  position: absolute;
+  top: 48%;
+  transition: all 0.8s;
+  transition-delay: 0s;
+  opacity: 1;
+  filter: contrast(0.5);
+}
+
+.iceberg-top {
+  height: 150%;
+  position: absolute;
+  top: -53%;
+  transition: all 0.8s;
+  transition-delay: 0s;
+  opacity: 0.4;
+}
+
+
+.content-body {
+  width: 75%;
+  z-index: 200;
+  height: 100%;
+  position: relative;
+}
+
+.top-half {
+  width: 100%;
+  bottom: 50%;
+  position: absolute;
+}
+
+.bottom-half {
+  width: 100%;
+  height: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+.title {
+  font-family: 'Ubuntu', sans-serif;
+  -webkit-text-fill-color: transparent;
+  font-size: var(--font-80);
+  line-height: 4.5vw;
+  font-weight: bold;
+  letter-spacing: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.description {
+  margin: 3.25vh 2.15vw;
+  font-size: var(--font-18);
+  font-weight: 400;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background: #1d1d1d;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.skills-title {
+  font-weight: bold;
+  font-size: var(--font-40);
+  line-height: 2.5vw;
+  margin-top: 3.25vh;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 5px;
+}
+
+
+.skills {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.15vw;
+  column-gap: 2.15vw;
+}
+
+.skills-category {
+  flex: 1 1;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: var(--font-20);
+}
+
+.skills-header {
+  width: fit-content;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 0.3vw 1vw;
+  margin-top: -2px;
+  margin-left: -2px;
+  background: #fff;
+  font-size: var(--font-12);
+  font-weight: 500;
+  color: #1d1d1d;
+  transition: all 0.3s ease-in-out;
+}
+
+.skills-body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1vw;
+  padding: 1vw;
+}
+
+.photo {
+  padding: 6.75vh 5vw 3.25vh 5vw;
+}
+
+.photo img {
+  width: 100%;
+  border-radius: 50%;
+  /* filter: grayscale(1); */
+  border: 2px solid #1d1d1d;
+}
+
+.bio {
+  font-size: var(--font-18);
+  font-weight: 400;
+  text-align: justify;
+  padding: 0 2.15vw;
+  hyphens: auto;
+}
+
+.bio span {
+  font-size: var(--font-20);
+  font-weight: 600;
+  margin: 0.5vw;
+}
+
+.bio hr {
+  border-width: 0;
+  margin: 0;
+  margin-bottom: 1.75vh
+}
+
+.action-buttons {
+  padding: 3.25vh 2.15vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5vw;
+}
+
+.action-buttons button {
+  flex: 1 1;
+  width: 100%;
+  border: 2px solid #1d1d1d;
+  background: #fff;
+  padding: 0.75vw;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: var(--font-20);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.action-buttons button:hover {
+  border: 2px solid #1d1d1d;
+  background: #1d1d1d;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.socials {
+  display: flex;
+  position: absolute;
+  padding: 6.25vh 2.15vw;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.socials-logo {
+  font-size: var(--font-40);
+  cursor: pointer;
+  color: #1d1d1d;
+  transition: all 0.3s ease-in-out;
+}
+
+.socials-logo:hover {
+  color: #1d1d1d;
+}
+
+.page-indicator {
+  height: 30vh;
+  width: 13%;
+  position: absolute;
+  left: 0;
+  z-index: 300;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-indicator>.circle {
+  width: 2vw;
+  height: 2vw;
+  border: 2px solid #1d1d1d;
+  border-radius: 50%;
+}
+
+.page-indicator>.circle-fill {
+  width: 2vw;
+  height: 2vw;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.page-indicator>.line {
+  width: 2px;
+  height: 15vh;
+  background: white;
+}
+
+.scroll-me {
+  width: 2vw;
+  height: 3.5vw;
+  border: 2px solid #1d1d1d;
+  border-radius: 25px 25px 30px 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+.scroll-me>.wheel {
+  position: absolute;
+  width: 5px;
+  height: 20px;
+  top: 0.5vw;
+  background: #1d1d1d;
+  border-radius: 10px;
+  animation-name: scroll;
+  animation-duration: 1s;
+  animation-iteration-count: 3;
+}
+
+@keyframes scroll {
+  0% {
+    top: 0.25vw;
   }
-  to {
-    transform: rotate(360deg);
+
+  100% {
+    top: 1vw;
+  }
+}
+
+
+@media screen and (min-width: 480px) {
+  .bio {
+    font-size: var(--font-14);
+  }
+
+  .bio span {
+    font-size: var(--font-18);
+  }
+
+  .action-buttons button  {
+    font-size: var(--font-18);
   }
 }
