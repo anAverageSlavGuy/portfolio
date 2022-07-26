@@ -1,0 +1,126 @@
+.work {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.works-title {
+    font-weight: bold;
+    margin-top: 15vh;
+    font-family: 'Ubuntu', sans-serif;
+    -webkit-text-stroke: 2px #1d1d1d;
+    -webkit-text-fill-color: transparent;
+    font-size: var(--font-80);
+    line-height: 4.5vw;
+    font-weight: bold;
+    letter-spacing: 5px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.works {
+    width: 73%;
+    margin: auto;
+    margin: 3.25vh 0 6.75vh 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 2.15vw;
+    row-gap: 2.15vw;
+}
+
+.work-container {
+    position: relative;
+    flex: 1 1 25%;
+    height: 14.25vw;
+    max-width: calc(33% - 1.5vw);
+    border: 2px solid #1d1d1d;
+    border-radius: 15px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-20);
+}
+
+.work-container:hover .work-body>img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.work-container:hover .work-header {
+    background: #1d1d1d;
+    color: #fff;
+}
+
+.work-header {
+    width: fit-content;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 2px solid #1d1d1d;
+    padding: 0.3vw 1vw;
+    margin-top: -2px;
+    margin-left: -2px;
+    background: #fff;
+    font-size: var(--font-12);
+    font-weight: 500;
+    color: #1d1d1d;
+    transition: all 0.3s ease-in-out;
+    z-index: 200;
+}
+
+.work-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: calc(100% + 0.5px);
+    border-radius: 13px;
+    overflow: hidden;
+    border: none;
+    top: -0.5px;
+    height: calc(100% + 0.75px);
+}
+
+.work-body img {
+    width: 100%;
+    align-self: normal;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+    visibility: visible;
+    opacity: 1;
+}
+
+.details {
+    position: absolute;
+    text-align: justify;
+    padding: 0 2.15vw;
+    hyphens: auto;
+    font-size: var(--font-14);
+}
+
+.details-actions {
+    position: absolute;
+    bottom: 1.5vw;
+    display: flex;
+    column-gap: 1.5vw;
+}
+
+
+.details-actions button {
+    flex: 1 1;
+    width: 100%;
+    border: 2px solid #1d1d1d;
+    background: #fff;
+    padding: 0.25vw 0.75vw;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: var(--font-12);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.details-actions button:hover {
+    background: #1d1d1d;
+    color: #fff;
+}

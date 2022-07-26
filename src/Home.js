@@ -1,9 +1,10 @@
 
 import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import './App.css';
-import Iceberg from './iceberg.svg';
-import Photo from './photo.jpg';
-import { Github, Linkedin, Instagram, Google, Telegram } from 'react-bootstrap-icons';
+import Iceberg from './img/iceberg.svg';
+import Photo from './img/photo.jpg';
+import { Github, Linkedin, Google, Telegram } from 'react-bootstrap-icons';
 
 function Home() {
 
@@ -73,6 +74,7 @@ function Home() {
     useEffect(() => {
         setTimeout(function () {
             setAnimate(true);
+            setToggle(true);
         }, 3000);
     }, []);
 
@@ -114,15 +116,15 @@ function Home() {
                     </div>
 
                     <div className="action-buttons">
-                        <button>CHECK MY WORK</button>
-                        <button>CHECK MY CV</button>
+                        <NavLink to="/work"><button>CHECK MY WORK</button></NavLink>
+                        <NavLink to="/cv"><button>CHECK MY CV</button></NavLink>
                     </div>
 
                     <div className="socials">
                         <a href="https://github.com/anAverageSlavGuy" target="_blank"><Github className="socials-logo" /></a>
                         <a href="https://github.com/anAverageSlavGuy" target="_blank"><Linkedin className="socials-logo" /></a>
-                        <a href="https://github.com/anAverageSlavGuy" target="_blank"><Google className="socials-logo" /></a>
-                        <a href="https://github.com/anAverageSlavGuy" target="_blank"><Telegram className="socials-logo" /></a>
+                        <a href="https://mail.google.com/mail/u/0/?fs=1&to=yev.shavlay@gmail.com&su=Software%20Developer%20Job&tf=cm" target="_blank"><Google className="socials-logo" /></a>
+                        <a href="https://telegram.me/yev_sh" target="_blank"><Telegram className="socials-logo" /></a>
                     </div>
                 </div>
                 <div className="content" style={styles.text}>

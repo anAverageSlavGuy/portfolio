@@ -10,11 +10,13 @@ import Work from './Work.js';
 
 
 function App() {
+
   return (
     <Router>
       <Routes>
         <Route extact path="/" element={<Home/>}></Route>
         <Route path="/home" element={<Home/>}> </Route>
+        <Route path="/portfolio" element={<Home/>}> </Route>
         <Route path="/work" element={<Work/>}></Route>
       </Routes>
     </Router>
