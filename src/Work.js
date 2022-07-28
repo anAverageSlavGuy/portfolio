@@ -69,32 +69,6 @@ function Work() {
             </div>
           </div>
         </div>
-        <div className="work-container">
-          <div className="work-header">JASMIN ( BY NAGIOS )</div>
-          <div className="work-body">
-            <img src={Jasmin} />
-            <div className="details">
-              Collaborated in development of webapp built with PHP, JS, HTML, CSS for monitoring hosts and services
-              of multiple Nagios Core servers in real time.
-            </div>
-            <div className="details-actions">
-              <a href="https://github.com/CodingPeaks/jasmin" target="_blank"><button>SOURCE</button></a>
-            </div>
-          </div>
-        </div>
-        <div className="work-container">
-          <div className="work-header">JASMIN ( BY NAGIOS )</div>
-          <div className="work-body">
-            <img src={Jasmin} />
-            <div className="details">
-              Collaborated in development of webapp built with PHP, JS, HTML, CSS for monitoring hosts and services
-              of multiple Nagios Core servers in real time.
-            </div>
-            <div className="details-actions">
-              <a href="https://github.com/CodingPeaks/jasmin" target="_blank"><button>SOURCE</button></a>
-            </div>
-          </div>
-        </div>
       </div>
     </div >
   );

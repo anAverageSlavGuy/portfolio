@@ -74,7 +74,6 @@ function Home() {
     useEffect(() => {
         setTimeout(function () {
             setAnimate(true);
-            setToggle(true);
         }, 3000);
     }, []);
 
