@@ -11,7 +11,7 @@ function Work() {
     <div className="work">
       <div className="works-title">WORK</div>
       <div className="action-buttons" style={{ flexDirection: "row", columnGap: "1.5vw" }}>
-        <NavLink to="/"><button style={{ width: "20.75vw" }}>GO TO HOME</button></NavLink>
+        <NavLink to="/"><button style={{ width: "20.75vw" }}>RETURN TO HOME</button></NavLink>
         <NavLink to="/cv"><button style={{ width: "20.75vw" }}>CHECK MY CV</button></NavLink>
       </div>
       <div className="works">
@@ -38,6 +38,7 @@ function Work() {
             </div>
             <div className="details-actions">
               <a href="https://github.com/anAverageSlavGuy/wedding-invitation" target="_blank"><button>SOURCE</button></a>
+              <a href="https://yev-wedding-invitation.netlify.app/" target="_blank"><button>DEMO</button></a>
             </div>
           </div>
         </div>

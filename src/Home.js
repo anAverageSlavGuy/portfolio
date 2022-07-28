@@ -148,7 +148,9 @@ function Home() {
                                     BACK-END
                                 </div>
                                 <div className="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae metus pulvinar felis eleifend dignissim nec sit amet orci. Duis sed ipsum vestibulum, vestibulum arcu id, cursus nulla. Nam ligula turpis, fringilla vel sodales sit amet, finibus et neque
+                                    I also can switch to backend, because when you have to develop entire applications, or simply broaden your horizons,
+                                    it becomes essential to also know it. I am passionate about server-side programming as well as with the client one.
+                                    It has become fun and fascinating for me to work with data in different formats and optimize the work done by the server.
                                 </div>
                                 <div className="divider" style={styles.divider}></div>
                                 <div className="skills-title" style={styles.title}>SKILLS</div>
@@ -172,7 +174,9 @@ function Home() {
                                     FRONT-END
                                 </div>
                                 <div className="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae metus pulvinar felis eleifend dignissim nec sit amet orci. Duis sed ipsum vestibulum, vestibulum arcu id, cursus nulla. Nam ligula turpis, fringilla vel sodales sit amet, finibus et neque
+                                    The frontend for me was like love at first sight, I had never touched javascript or anything like that when I was in school.
+                                    It changed my way of seeing programming and made me want to write code again, because thanks to web based languages
+                                    I was able to create incredible things from scratch and I was able to touch and see my works with my eyes.
                                 </div>
                                 <div className="divider" style={styles.divider}></div>
                                 <div className="skills-title" style={styles.title}>SKILLS</div>

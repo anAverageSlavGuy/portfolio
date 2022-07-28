@@ -134,6 +134,8 @@ body,
   margin: 3.25vh 2.15vw;
   font-size: var(--font-18);
   font-weight: 400;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .divider {
@@ -326,7 +328,30 @@ body,
     font-size: var(--font-18);
   }
 
-  .action-buttons button  {
+  .action-buttons button {
     font-size: var(--font-18);
   }
+}
+
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #1d1d1d #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #1d1d1d;
+  border-radius: 10px;
+  border: 2px none #1d1d1d;
 }
