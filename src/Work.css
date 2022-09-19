@@ -121,3 +121,49 @@
     background: #1d1d1d;
     color: #fff;
 }
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    :root {
+        --font-12: 3vw;
+        --font-14: 3.5vw;
+        --font-16: 4.125vw;
+        --font-18: 4.75vw;
+        --font-20: 5.125vw;
+        --font-40: 9vw;
+        --font-48: 11.75vw;
+    }
+
+    .works-title {
+        margin-top: 15vw;
+        font-size: var(--font-48);
+    }
+
+    .works {
+        width: 100%;
+        padding: 0 7.5vw 7.5vw 7.5vw;
+        margin: 0;
+        flex-direction: column;
+        justify-content: unset;
+        flex-wrap: unset;
+        row-gap: 7.5vw;
+    }
+
+    .work-container {
+        max-width: unset;
+        height: auto;
+    }
+
+    .work-header {
+        padding: 1.5vw 5vw;
+    }
+
+    .work-body {
+        margin-top: -7.5vw;
+        position: relative;
+    }
+
+}

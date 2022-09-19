@@ -10,9 +10,9 @@ function Work() {
   return (
     <div className="work">
       <div className="works-title">WORK</div>
-      <div className="action-buttons" style={{ flexDirection: "row", columnGap: "1.5vw" }}>
-        <NavLink to="/"><button style={{ width: "20.75vw" }}>RETURN TO HOME</button></NavLink>
-        <NavLink to="/cv"><button style={{ width: "20.75vw" }}>CHECK MY CV</button></NavLink>
+      <div className="action-buttons" style={{ width: "100%", marginTop: "7.5vw"}}>
+        <NavLink to="/"><button style={{ }}>RETURN TO HOME</button></NavLink>
+        <NavLink to="/cv"><button style={{ }}>CHECK MY CV</button></NavLink>
       </div>
       <div className="works">
         <div className="work-container">

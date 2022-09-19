@@ -4,12 +4,12 @@ import CvPdf from './Yevgeniy-Shavlay-CV.pdf';
 function Cv() {
     return (
         <div className="work">
-            <div className="works-title">CURRICULUM VITAE</div>
-            <div className="action-buttons" style={{ flexDirection: "row", columnGap: "1.5vw" }}>
-                <NavLink to="/"><button style={{ width: "20.75vw" }}>RETURN TO HOME</button></NavLink>
-                <NavLink to="/work"><button style={{ width: "20.75vw" }}>CHECK MY WORK</button></NavLink>
+            <div className="works-title" style={{ textAlign: "center", lineHeight: "12vw" }}>CURRICULUM VITAE</div>
+            <div className="action-buttons" style={{ width: "100%"}}>
+                <NavLink to="/"><button style={{ }}>RETURN TO HOME</button></NavLink>
+                <NavLink to="/work"><button style={{ }}>CHECK MY WORK</button></NavLink>
             </div>
-            <iframe src={CvPdf + "#view=Fit"} style={{marginTop: "3.25vh", width: "73%", height: "100vh"}}></iframe>
+            <iframe src={CvPdf + "#view=Fit"} style={{marginTop: "7.5vw", width: "100%", height: "100vh"}}></iframe>
         </div>
     );
 }

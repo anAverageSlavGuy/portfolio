@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Home.css';
 import Iceberg from './img/iceberg.svg';
@@ -7,6 +7,11 @@ import Photo from './img/photo.jpg';
 import { Github, Linkedin, Google, Telegram } from 'react-bootstrap-icons';
 
 function HomeMobile() {
+
+    const [scrollPosition, setScrollPosition] = useState(0);
+
+    const feElement = useRef(null);
+    const beElement = useRef(null);
 
     const [toggle, setToggle] = useState(false);
 
@@ -100,7 +105,17 @@ function HomeMobile() {
     const frontEndSkills = [{ "name": "LIBRARIES", "items": ["React JS", "Redux", "JQuery"] }, { "name": "LANGUAGES", "items": ["JavaScript", "HTML5", "CSS3"] }, { "name": "FRAMEWORKS CSS", "items": ["Materialize", "Bootstrap", "Tailwind"] }];
     const backEndSkills = [{ "name": "LANGUAGES", "items": ["Node JS", "PHP", "Python", "BASH"] }, { "name": "DATABASES", "items": ["MySQL", "Redis", "MongoDB"] }, { "name": "SOFT SKILLS", "items": ["REST API", "Git", "Web Servers", "AWS"] }];
 
+    /* useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
+    
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
+    useEffect(() => {
+       console.log("position changed =>", scrollPosition);
+    }, [scrollPosition]); */
 
     return (
         <div className="app">
@@ -131,7 +146,7 @@ function HomeMobile() {
 
                 </div>
 
-                <div className="content-frontend">
+                <div className="content-frontend" ref={feElement}>
 
                     <div className="background" style={frontendStyles.background}></div>
                     <img src={Iceberg} className={"iceberg-" + (toggle ? "top" : "bottom")} />
@@ -169,7 +184,7 @@ function HomeMobile() {
 
 
 
-                <div className="content-backend" >
+                <div className="content-backend" ref={beElement}>
 
                     <div className="background" style={backendStyles.background}></div>
                     <img src={Iceberg} className={"iceberg-" + (!toggle ? "top" : "bottom")} />
