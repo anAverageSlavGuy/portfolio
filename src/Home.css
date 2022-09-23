@@ -1,8 +1,10 @@
 :root {
   --font-12: 0.85vw;
   --font-14: 1vw;
+  --font-16: 1.125vw;
   --font-18: 1.25vw;
   --font-20: 1.4vw;
+  --font-24: 1.65vw;
   --font-40: 2.75vw;
   --font-80: 5.5vw;
 }
@@ -36,7 +38,7 @@ body,
 
 .about {
   flex: 1;
-  background: #a2a8ab;
+  border-right: 3px solid #1d1d1d;
   position: relative;
 }
 
@@ -143,7 +145,7 @@ body,
 
 .description {
   margin: 3.25vh 2.15vw;
-  font-size: var(--font-18);
+  font-size: var(--font-16);
   font-weight: 400;
   text-align: justify;
   hyphens: auto;
@@ -184,7 +186,7 @@ body,
   font-weight: 400;
   display: flex;
   flex-direction: column;
-  font-size: var(--font-20);
+  font-size: var(--font-18);
 }
 
 .skills-header {
@@ -220,7 +222,7 @@ body,
 }
 
 .bio {
-  font-size: var(--font-18);
+  font-size: var(--font-16);
   font-weight: 400;
   text-align: justify;
   padding: 0 2.15vw;
@@ -240,7 +242,7 @@ body,
 }
 
 .action-buttons {
-  padding: 3.25vh 2.15vw;
+  padding: 2.15vw;
   display: flex;
   flex-direction: column;
   row-gap: 1.5vw;
@@ -331,21 +333,6 @@ body,
 }
 
 
-@media screen and (min-width: 480px) {
-  .bio {
-    font-size: var(--font-14);
-  }
-
-  .bio span {
-    font-size: var(--font-18);
-  }
-
-  .action-buttons button {
-    font-size: var(--font-18);
-  }
-}
-
-
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
@@ -367,6 +354,51 @@ body,
   border-radius: 10px;
   border: 2px none #1d1d1d;
 }
+
+
+@media screen and (min-width: 1400px) {
+
+  .about {
+    flex: 2;
+  }
+
+  .content {
+    flex: 7;
+  }
+
+  .bio {
+    font-size: var(--font-14);
+  }
+
+  .bio span {
+    font-size: var(--font-18);
+  }
+
+  .action-buttons button {
+    font-size: var(--font-16);
+  }
+
+  .socials-logo {
+    font-size: 2.5vw;
+  }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+  .bio {
+    font-size: var(--font-18);
+  }
+
+  .bio span {
+    font-size: var(--font-24);
+  }
+
+  .action-buttons button {
+    font-size: var(--font-18);
+  }
+}
+
 
 
 @media only screen and (max-width: 600px) {
@@ -418,13 +450,16 @@ body,
   }
 
   .action-buttons {
-    padding: 7.5vw;
-    padding-bottom: 15vw;
-    row-gap: 7.5vw;
+    margin-top: 7.5vw !important;
+    padding: 7.5vw!important;
+    padding-bottom: 15vw!important;
+    row-gap: 7.5vw!important;
+    flex-direction: column !important;
   }
 
   .action-buttons button {
-    padding: 3.5vw;
+    padding: 3.5vw!important;
+    width: 100%!important;
   }
 
   .content-frontend {
