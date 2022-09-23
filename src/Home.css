@@ -38,7 +38,6 @@ body,
 
 .about {
   flex: 1;
-  border-right: 3px solid #1d1d1d;
   position: relative;
 }
 
@@ -219,6 +218,7 @@ body,
   border-radius: 50%;
   /* filter: grayscale(1); */
   border: 2px solid #1d1d1d;
+  transition: all 0.3s ease-in-out;
 }
 
 .bio {
@@ -227,6 +227,7 @@ body,
   text-align: justify;
   padding: 0 2.15vw;
   hyphens: auto;
+  transition: all 0.3s ease-in-out;
 }
 
 .bio span {
@@ -417,6 +418,11 @@ body,
     flex-direction: column;
   }
 
+  .about {
+    background: #1d1d1d;
+    color: #fff;
+  }
+
   .photo {
     display: flex;
     justify-content: space-around;
@@ -425,6 +431,7 @@ body,
 
   .photo img {
     width: 63%;
+    border-color: #fff;
   }
 
   .socials {
@@ -460,6 +467,7 @@ body,
   .action-buttons button {
     padding: 3.5vw!important;
     width: 100%!important;
+    border-color: #fff!important;
   }
 
   .content-frontend {
@@ -536,5 +544,9 @@ body,
   .iceberg-top {
     height: 100%;
     top: -33%;
+  }
+
+  .socials-logo {
+    color: #fff!important;
   }
 }

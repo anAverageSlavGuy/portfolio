@@ -142,8 +142,6 @@ function HomeMobile() {
                         <NavLink to="/work"><button>CHECK MY WORK</button></NavLink>
                         <NavLink to="/cv"><button>CHECK MY CV</button></NavLink>
                     </div>
-
-
                 </div>
 
                 <div className="content-frontend" ref={feElement}>

@@ -55,6 +55,22 @@ function HomeDesktop() {
         },
         mouse: {
             opacity: scroll ? "0" : "1"
+        },
+        aboutStyle: {
+            color: toggle ? "#1d1d1d" : "#fff"
+        },
+        aboutBackground: {
+            height: toggle ? "0%" : "100%",
+            zIndex: "-1"
+        },
+        socialsButtons: {
+            color: toggle ? "#1d1d1d" : "#fff"
+        },
+        actionButtons: {
+            borderColor: toggle ? "#1d1d1d" : "#fff"
+        },
+        photoStyle: {
+            borderColor: toggle ? "#1d1d1d" : "#fff"
         }
     };
 
@@ -102,31 +118,70 @@ function HomeDesktop() {
     return (
         <div className="app" onWheel={(e) => handleWheelScroll(e)}>
             <div className="container">
-                <div className="about">
-                    <div className="photo">
-                        <img src={Photo} />
-                    </div>
-                    <div className="bio">
-                        Hi, i’m <span>Yev</span><br />
-                        <hr />
-                        I am a fullstack developer specialized in frontend and backend.
-                        I have been working for about 5 years and I really want to learn new and stimulating things
-                        because I like to range in the field of programming, from the deepness of the backend to fancy CSS.
-                    </div>
 
-                    <div className="action-buttons">
-                        <NavLink to="/work"><button>CHECK MY WORK</button></NavLink>
-                        <NavLink to="/cv"><button>CHECK MY CV</button></NavLink>
-                    </div>
 
-                    <div className="socials">
-                        <a href="https://github.com/anAverageSlavGuy" target="_blank"><Github className="socials-logo" /></a>
-                        <a href="https://github.com/anAverageSlavGuy" target="_blank"><Linkedin className="socials-logo" /></a>
-                        <a href="https://mail.google.com/mail/u/0/?fs=1&to=yev.shavlay@gmail.com&su=Software%20Developer%20Job&tf=cm" target="_blank"><Google className="socials-logo" /></a>
-                        <a href="https://telegram.me/yev_sh" target="_blank"><Telegram className="socials-logo" /></a>
-                    </div>
-                </div>
-                <div className="content" style={styles.text}>
+                {toggle ? (
+                    <>
+                        <div className="about" style={styles.aboutStyle}>
+                            <div className="background" style={styles.aboutBackground}></div>
+                            <div className="photo">
+                                <img src={Photo} style={styles.photoStyle} />
+                            </div>
+                            <div className="bio">
+                                Hi, i’m <span>Yev</span><br />
+                                <hr />
+                                I am a fullstack developer specialized in frontend and backend.
+                                I have been working for about 5 years and I really want to learn new and stimulating things
+                                because I like to range in the field of programming, from the deepness of the backend to fancy CSS.
+                            </div>
+
+                            <div className="action-buttons">
+                                <NavLink to="/work"><button style={styles.actionButtons}>CHECK MY WORK</button></NavLink>
+                                <NavLink to="/cv"><button style={styles.actionButtons}>CHECK MY CV</button></NavLink>
+                            </div>
+
+                            <div className="socials">
+                                <a href="https://github.com/anAverageSlavGuy" target="_blank"><Github className="socials-logo" style={styles.socialsButtons} /></a>
+                                <a href="https://github.com/anAverageSlavGuy" target="_blank"><Linkedin className="socials-logo" style={styles.socialsButtons} /></a>
+                                <a href="https://mail.google.com/mail/u/0/?fs=1&to=yev.shavlay@gmail.com&su=Software%20Developer%20Job&tf=cm" target="_blank"><Google className="socials-logo" style={styles.socialsButtons} /></a>
+                                <a href="https://telegram.me/yev_sh" target="_blank"><Telegram className="socials-logo" style={styles.socialsButtons} /></a>
+                            </div>
+                        </div>
+                    </>
+                ) : (
+                    <>
+                        <div className="about" style={styles.aboutStyle}>
+                            <div className="background" style={styles.aboutBackground}></div>
+
+                            <div className="photo">
+                                <img src={Photo} style={styles.photoStyle} />
+                            </div>
+                            <div className="bio">
+                                Hi, i’m <span>Yev</span><br />
+                                <hr />
+                                I am a fullstack developer specialized in frontend and backend.
+                                I have been working for about 5 years and I really want to learn new and stimulating things
+                                because I like to range in the field of programming, from the deepness of the backend to fancy CSS.
+                            </div>
+
+                            <div className="action-buttons">
+                                <NavLink to="/work"><button style={styles.actionButtons}>CHECK MY WORK</button></NavLink>
+                                <NavLink to="/cv"><button style={styles.actionButtons}>CHECK MY CV</button></NavLink>
+                            </div>
+
+                            <div className="socials">
+                                <a href="https://github.com/anAverageSlavGuy" target="_blank"><Github className="socials-logo" style={styles.socialsButtons} /></a>
+                                <a href="https://github.com/anAverageSlavGuy" target="_blank"><Linkedin className="socials-logo" style={styles.socialsButtons} /></a>
+                                <a href="https://mail.google.com/mail/u/0/?fs=1&to=yev.shavlay@gmail.com&su=Software%20Developer%20Job&tf=cm" target="_blank"><Google className="socials-logo" style={styles.socialsButtons} /></a>
+                                <a href="https://telegram.me/yev_sh" target="_blank"><Telegram className="socials-logo" style={styles.socialsButtons} /></a>
+                            </div>
+                        </div>
+                    </>
+                )}
+
+
+
+                < div className="content" style={styles.text}>
                     {/* <div className="switch" style={styles.switch} onClick={() => manageToggle()}>
             <div className="switch-track" style={styles.track}></div>
           </div> */}
