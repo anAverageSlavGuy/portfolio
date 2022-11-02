@@ -4,13 +4,14 @@ import Netflix from './img/netflix.png';
 import WeddingInvitation from './img/wedding-invitation.png';
 import Fomo from './img/fomo.png';
 import Jasmin from './img/jasmin.png';
+import Spotify from './img/spotify.png';
 
 
 function Work() {
   return (
     <div className="work">
       <div className="works-title">WORK</div>
-      <div className="action-buttons" style={{ width: "100%", marginTop: "2.15vw", justifyContent: "center", flexDirection: "row", columnGap: "2.15vw"}}>
+      <div className="action-buttons" style={{ width: "100%", justifyContent: "center", flexDirection: "row", columnGap: "2.15vw"}}>
         <NavLink to="/"><button style={{ width: "18vw" }}>RETURN TO HOME</button></NavLink>
         <NavLink to="/cv"><button style={{ width: "18vw" }}>CHECK MY CV</button></NavLink>
       </div>
@@ -66,6 +67,19 @@ function Work() {
             </div>
             <div className="details-actions">
               <a href="https://github.com/CodingPeaks/jasmin" target="_blank"><button>SOURCE</button></a>
+            </div>
+          </div>
+        </div>
+        <div className="work-container">
+          <div className="work-header">SPOTIFY REACT CLONE</div>
+          <div className="work-body">
+            <img src={Spotify} />
+            <div className="details">
+              Spotify clone made with create-react-app and Tailwind css framework
+            </div>
+            <div className="details-actions">
+              <a href="https://github.com/anAverageSlavGuy/spotify-react-clone" target="_blank"><button>SOURCE</button></a>
+              <a href="https://mellifluous-custard-316738.netlify.app" target="_blank"><button>DEMO</button></a>       
             </div>
           </div>
         </div>

@@ -131,7 +131,7 @@ function HomeDesktop() {
                                 Hi, i’m <span>Yev</span><br />
                                 <hr />
                                 I am a fullstack developer specialized in frontend and backend.
-                                I have been working for about 5 years and I really want to learn new and stimulating things
+                                I have been working for about 6 years and I really want to learn new and stimulating things
                                 because I like to range in the field of programming, from the deepness of the backend to fancy CSS.
                             </div>
 
@@ -160,7 +160,7 @@ function HomeDesktop() {
                                 Hi, i’m <span>Yev</span><br />
                                 <hr />
                                 I am a fullstack developer specialized in frontend and backend.
-                                I have been working for about 5 years and I really want to learn new and stimulating things
+                                I have been working for about 6 years and I really want to learn new and stimulating things
                                 because I like to range in the field of programming, from the deepness of the backend to fancy CSS.
                             </div>
 

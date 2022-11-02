@@ -1,15 +1,16 @@
 import { NavLink } from 'react-router-dom';
 import CvPdf from './Yevgeniy-Shavlay-CV.pdf';
+import './Cv.css';
 
 function Cv() {
     return (
-        <div className="work">
-            <div className="works-title" style={{ textAlign: "center", lineHeight: "12vw" }}>CURRICULUM VITAE</div>
-            <div className="action-buttons" style={{ width: "100%"}}>
-                <NavLink to="/"><button style={{ }}>RETURN TO HOME</button></NavLink>
-                <NavLink to="/work"><button style={{ }}>CHECK MY WORK</button></NavLink>
+        <div className="curriculum">
+            <div className="curriculum-title">CURRICULUM VITAE</div>
+            <div className="action-buttons" style={{ width: "100%", justifyContent: "center", flexDirection: "row", columnGap: "2.15vw"}}>
+                <NavLink to="/"><button style={{ width: "18vw" }}>RETURN TO HOME</button></NavLink>
+                <NavLink to="/work"><button style={{ width: "18vw" }}>CHECK MY WORK</button></NavLink>
             </div>
-            <iframe src={CvPdf + "#view=Fit"} style={{marginTop: "7.5vw", width: "100%", height: "100vh"}}></iframe>
+            <iframe src={CvPdf + "#view=Fit"} style={{margin: "3.25vh 0 0 0", width: "100%", height: "100vh"}}></iframe>
         </div>
     );
 }
