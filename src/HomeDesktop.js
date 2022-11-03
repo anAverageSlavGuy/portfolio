@@ -142,7 +142,7 @@ function HomeDesktop() {
 
                             <div className="socials">
                                 <a href="https://github.com/anAverageSlavGuy" target="_blank"><Github className="socials-logo" style={styles.socialsButtons} /></a>
-                                <a href="https://github.com/anAverageSlavGuy" target="_blank"><Linkedin className="socials-logo" style={styles.socialsButtons} /></a>
+                                <a href="https://www.linkedin.com/in/yevgeniy-shavlay-a023341a1/" target="_blank"><Linkedin className="socials-logo" style={styles.socialsButtons} /></a>
                                 <a href="https://mail.google.com/mail/u/0/?fs=1&to=yev.shavlay@gmail.com&su=Software%20Developer%20Job&tf=cm" target="_blank"><Google className="socials-logo" style={styles.socialsButtons} /></a>
                                 <a href="https://telegram.me/yev_sh" target="_blank"><Telegram className="socials-logo" style={styles.socialsButtons} /></a>
                             </div>
@@ -171,7 +171,7 @@ function HomeDesktop() {
 
                             <div className="socials">
                                 <a href="https://github.com/anAverageSlavGuy" target="_blank"><Github className="socials-logo" style={styles.socialsButtons} /></a>
-                                <a href="https://github.com/anAverageSlavGuy" target="_blank"><Linkedin className="socials-logo" style={styles.socialsButtons} /></a>
+                                <a href="https://www.linkedin.com/in/yevgeniy-shavlay-a023341a1/" target="_blank"><Linkedin className="socials-logo" style={styles.socialsButtons} /></a>
                                 <a href="https://mail.google.com/mail/u/0/?fs=1&to=yev.shavlay@gmail.com&su=Software%20Developer%20Job&tf=cm" target="_blank"><Google className="socials-logo" style={styles.socialsButtons} /></a>
                                 <a href="https://telegram.me/yev_sh" target="_blank"><Telegram className="socials-logo" style={styles.socialsButtons} /></a>
                             </div>
