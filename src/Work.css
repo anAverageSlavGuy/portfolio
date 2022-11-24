@@ -79,7 +79,6 @@
 }
 
 .work-body img {
-    width: 100%;
     align-self: normal;
     transition: all 0.3s ease-in-out;
     z-index: 100;
@@ -151,6 +150,10 @@
         justify-content: unset;
         flex-wrap: unset;
         row-gap: 7.5vw;
+    }
+
+    .work-body img {
+        width: 100%;
     }
 
     .work-container {

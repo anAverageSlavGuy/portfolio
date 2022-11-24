@@ -5,15 +5,15 @@ import WeddingInvitation from './img/wedding-invitation.png';
 import Fomo from './img/fomo.png';
 import Jasmin from './img/jasmin.png';
 import Spotify from './img/spotify.png';
+import Pokeapp from './img/pokeapp.png';
 
 
 function Work() {
   return (
     <div className="work">
       <div className="works-title">WORK</div>
-      <div className="action-buttons" style={{ width: "100%", justifyContent: "center", flexDirection: "row", columnGap: "2.15vw"}}>
+      <div className="action-buttons" style={{ width: "100%", justifyContent: "center", flexDirection: "row", columnGap: "2.15vw" }}>
         <NavLink to="/"><button style={{ width: "18vw" }}>RETURN TO HOME</button></NavLink>
-        <NavLink to="/cv"><button style={{ width: "18vw" }}>CHECK MY CV</button></NavLink>
       </div>
       <div className="works">
         <div className="work-container">
@@ -79,7 +79,19 @@ function Work() {
             </div>
             <div className="details-actions">
               <a href="https://github.com/anAverageSlavGuy/spotify-react-clone" target="_blank"><button>SOURCE</button></a>
-              <a href="https://mellifluous-custard-316738.netlify.app" target="_blank"><button>DEMO</button></a>       
+              <a href="https://mellifluous-custard-316738.netlify.app" target="_blank"><button>DEMO</button></a>
+            </div>
+          </div>
+        </div>
+        <div className="work-container">
+          <div className="work-header">POKEAPP</div>
+          <div className="work-body">
+            <img src={Pokeapp} />
+            <div className="details">
+              Pokemon desktop/mobile app built with TypeScript, NextJS, Prisma and <a href="https://pokeapi.co" target="_blank">POKEAPI</a> 
+            </div>
+            <div className="details-actions">
+              <a href="https://github.com/anAverageSlavGuy/pokeapp" target="_blank"><button>SOURCE</button></a>
             </div>
           </div>
         </div>

@@ -77,16 +77,7 @@ function HomeDesktop() {
     const frontEndSkills = [{ "name": "LIBRARIES", "items": ["React JS", "Redux", "JQuery"] }, { "name": "LANGUAGES", "items": ["JavaScript", "HTML5", "CSS3"] }, { "name": "FRAMEWORKS CSS", "items": ["Materialize", "Bootstrap", "Tailwind"] }];
     const backEndSkills = [{ "name": "LANGUAGES", "items": ["Node JS", "PHP", "Python", "BASH"] }, { "name": "DATABASES", "items": ["MySQL", "Redis", "MongoDB"] }, { "name": "SOFT SKILLS", "items": ["REST API", "Git", "Web Servers", "AWS"] }];
 
-    /*   const manageToggle = () => {
-        if (toggle) {
-          console.log("backend");
-        } else {
-          console.log("frontend");
-        }
-        setToggle(!toggle);
-        setAnimate(true);
-      } */
-
+    
     useEffect(() => {
         setTimeout(function () {
             setAnimate(true);
@@ -136,8 +127,8 @@ function HomeDesktop() {
                             </div>
 
                             <div className="action-buttons">
-                                <NavLink to="/work"><button style={styles.actionButtons}>CHECK MY WORK</button></NavLink>
-                                <NavLink to="/cv"><button style={styles.actionButtons}>CHECK MY CV</button></NavLink>
+                                <NavLink to="/work"><button style={styles.actionButtons}>CHECK MY WORKS</button></NavLink>
+                                <a href="https://drive.google.com/file/d/1pM4oc3kQyNZojflU5fSuNUNAC2DTHEch/view?usp=share_link" target="_blank"><button style={styles.actionButtons}>ASK FOR MY RESUME</button></a>
                             </div>
 
                             <div className="socials">
@@ -165,8 +156,8 @@ function HomeDesktop() {
                             </div>
 
                             <div className="action-buttons">
-                                <NavLink to="/work"><button style={styles.actionButtons}>CHECK MY WORK</button></NavLink>
-                                <NavLink to="/cv"><button style={styles.actionButtons}>CHECK MY CV</button></NavLink>
+                                <NavLink to="/work"><button style={styles.actionButtons}>CHECK MY WORKS</button></NavLink>
+                                <a href="https://drive.google.com/file/d/1pM4oc3kQyNZojflU5fSuNUNAC2DTHEch/view?usp=share_link" target="_blank"><button style={styles.actionButtons}>ASK FOR MY RESUME</button></a>
                             </div>
 
                             <div className="socials">

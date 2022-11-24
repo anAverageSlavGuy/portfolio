@@ -7,7 +7,6 @@ import {
 
 import Home from './Home.js';
 import Work from './Work.js';
-import Cv from './Cv.js';
 
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
         <Route path="/home" element={<Home/>}> </Route>
         <Route path="/portfolio" element={<Home/>}> </Route>
         <Route path="/work" element={<Work/>}></Route>
-        <Route path="/cv" element={<Cv/>}></Route>
       </Routes>
     </Router>
   );

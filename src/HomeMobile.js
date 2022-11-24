@@ -105,18 +105,6 @@ function HomeMobile() {
     const frontEndSkills = [{ "name": "LIBRARIES", "items": ["React JS", "Redux", "JQuery"] }, { "name": "LANGUAGES", "items": ["JavaScript", "HTML5", "CSS3"] }, { "name": "FRAMEWORKS CSS", "items": ["Materialize", "Bootstrap", "Tailwind"] }];
     const backEndSkills = [{ "name": "LANGUAGES", "items": ["Node JS", "PHP", "Python", "BASH"] }, { "name": "DATABASES", "items": ["MySQL", "Redis", "MongoDB"] }, { "name": "SOFT SKILLS", "items": ["REST API", "Git", "Web Servers", "AWS"] }];
 
-    /* useEffect(() => {
-        window.addEventListener('scroll', handleScroll, { passive: true });
-    
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
-    useEffect(() => {
-       console.log("position changed =>", scrollPosition);
-    }, [scrollPosition]); */
-
     return (
         <div className="app">
             <div className="container">
@@ -139,8 +127,8 @@ function HomeMobile() {
                     </div>
 
                     <div className="action-buttons">
-                        <NavLink to="/work"><button>CHECK MY WORK</button></NavLink>
-                        <NavLink to="/cv"><button>CHECK MY CV</button></NavLink>
+                        <NavLink to="/work"><button>CHECK MY WORKS</button></NavLink>
+                        <a href="https://drive.google.com/file/d/1pM4oc3kQyNZojflU5fSuNUNAC2DTHEch/view?usp=share_link" target="_blank"><button>ASK FOR MY RESUME</button></a>
                     </div>
                 </div>
 
