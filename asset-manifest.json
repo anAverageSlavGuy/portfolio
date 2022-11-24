@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.8d130c66.css",
+    "main.js": "/portfolio/static/js/main.edb54710.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/fomo.png": "/portfolio/static/media/fomo.df19010209dbc9d9623f.png",
+    "static/media/wedding-invitation.png": "/portfolio/static/media/wedding-invitation.158282b7354a0462b651.png",
+    "static/media/netflix.png": "/portfolio/static/media/netflix.293c69ce136a54740ffd.png",
+    "static/media/spotify.png": "/portfolio/static/media/spotify.0907871a598b352cc3aa.png",
+    "static/media/Yevgeniy-Shavlay-CV.pdf": "/portfolio/static/media/Yevgeniy-Shavlay-CV.7d8f8e2d5d4df431b9a8.pdf",
+    "static/media/photo.jpg": "/portfolio/static/media/photo.07dd4bf130114d61ff40.jpg",
+    "static/media/jasmin.png": "/portfolio/static/media/jasmin.3764164e7a8789432d6d.png",
+    "index.html": "/portfolio/index.html",
+    "static/media/iceberg.svg": "/portfolio/static/media/iceberg.ff9783ecf0d406cd79c335eac314f135.svg",
+    "main.8d130c66.css.map": "/portfolio/static/css/main.8d130c66.css.map",
+    "main.edb54710.js.map": "/portfolio/static/js/main.edb54710.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8d130c66.css",
+    "static/js/main.edb54710.js"
+  ]
+}
