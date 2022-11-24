@@ -13,7 +13,7 @@ import Cv from './Cv.js';
 function App() {
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route extact path="/" element={<Home/>}></Route>
         <Route path="/home" element={<Home/>}> </Route>
