@@ -77,7 +77,7 @@ function HomeDesktop() {
     const frontEndSkills = [{ "name": "LIBRARIES", "items": ["React JS", "Redux", "JQuery"] }, { "name": "LANGUAGES", "items": ["JavaScript", "HTML5", "CSS3"] }, { "name": "FRAMEWORKS CSS", "items": ["Materialize", "Bootstrap", "Tailwind"] }];
     const backEndSkills = [{ "name": "LANGUAGES", "items": ["Node JS", "PHP", "Python", "BASH"] }, { "name": "DATABASES", "items": ["MySQL", "Redis", "MongoDB"] }, { "name": "SOFT SKILLS", "items": ["REST API", "Git", "Web Servers", "AWS"] }];
 
-    
+
     useEffect(() => {
         setTimeout(function () {
             setAnimate(true);
@@ -116,7 +116,7 @@ function HomeDesktop() {
                         <div className="about" style={styles.aboutStyle}>
                             <div className="background" style={styles.aboutBackground}></div>
                             <div className="photo">
-                                <img src={Photo} style={styles.photoStyle} />
+                                <img src={Photo} alt="profile-photo" style={styles.photoStyle} />
                             </div>
                             <div className="bio">
                                 Hi, i’m <span>Yev</span><br />
@@ -132,10 +132,10 @@ function HomeDesktop() {
                             </div>
 
                             <div className="socials">
-                                <a href="https://github.com/anAverageSlavGuy" target="_blank"><Github className="socials-logo" style={styles.socialsButtons} /></a>
-                                <a href="https://www.linkedin.com/in/yevgeniy-shavlay-a023341a1/" target="_blank"><Linkedin className="socials-logo" style={styles.socialsButtons} /></a>
-                                <a href="https://mail.google.com/mail/u/0/?fs=1&to=yev.shavlay@gmail.com&su=Software%20Developer%20Job&tf=cm" target="_blank"><Google className="socials-logo" style={styles.socialsButtons} /></a>
-                                <a href="https://telegram.me/yev_sh" target="_blank"><Telegram className="socials-logo" style={styles.socialsButtons} /></a>
+                                <a href="https://github.com/anAverageSlavGuy" target="_blank"><Github className="socials-logo" alt="github" style={styles.socialsButtons} /></a>
+                                <a href="https://www.linkedin.com/in/yevgeniy-shavlay-a023341a1/" target="_blank"><Linkedin className="socials-logo" alt="linkedin" style={styles.socialsButtons} /></a>
+                                <a href="https://mail.google.com/mail/u/0/?fs=1&to=yev.shavlay@gmail.com&su=Software%20Developer%20Job&tf=cm" target="_blank"><Google className="socials-logo" alt="gmail" style={styles.socialsButtons} /></a>
+                                <a href="https://telegram.me/yev_sh" target="_blank"><Telegram className="socials-logo" alt="telegram" style={styles.socialsButtons} /></a>
                             </div>
                         </div>
                     </>
@@ -145,7 +145,7 @@ function HomeDesktop() {
                             <div className="background" style={styles.aboutBackground}></div>
 
                             <div className="photo">
-                                <img src={Photo} style={styles.photoStyle} />
+                                <img src={Photo} alt="profile-photo" style={styles.photoStyle} />
                             </div>
                             <div className="bio">
                                 Hi, i’m <span>Yev</span><br />
@@ -161,10 +161,10 @@ function HomeDesktop() {
                             </div>
 
                             <div className="socials">
-                                <a href="https://github.com/anAverageSlavGuy" target="_blank"><Github className="socials-logo" style={styles.socialsButtons} /></a>
-                                <a href="https://www.linkedin.com/in/yevgeniy-shavlay-a023341a1/" target="_blank"><Linkedin className="socials-logo" style={styles.socialsButtons} /></a>
-                                <a href="https://mail.google.com/mail/u/0/?fs=1&to=yev.shavlay@gmail.com&su=Software%20Developer%20Job&tf=cm" target="_blank"><Google className="socials-logo" style={styles.socialsButtons} /></a>
-                                <a href="https://telegram.me/yev_sh" target="_blank"><Telegram className="socials-logo" style={styles.socialsButtons} /></a>
+                                <a href="https://github.com/anAverageSlavGuy" target="_blank"><Github className="socials-logo" alt="github" style={styles.socialsButtons} /></a>
+                                <a href="https://www.linkedin.com/in/yevgeniy-shavlay-a023341a1/" target="_blank"><Linkedin className="socials-logo" alt="linkedin" style={styles.socialsButtons} /></a>
+                                <a href="https://mail.google.com/mail/u/0/?fs=1&to=yev.shavlay@gmail.com&su=Software%20Developer%20Job&tf=cm" target="_blank"><Google className="socials-logo" alt="gmail" style={styles.socialsButtons} /></a>
+                                <a href="https://telegram.me/yev_sh" target="_blank"><Telegram className="socials-logo" alt="telegram" style={styles.socialsButtons} /></a>
                             </div>
                         </div>
                     </>
